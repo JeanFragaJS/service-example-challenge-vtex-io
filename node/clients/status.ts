@@ -12,11 +12,11 @@ export default class Status extends ExternalClient {
     })
   }
 
-  public async getStatusWithHeaders(
-    status: number
-  ): Promise<IOResponse<string>> {
-    return this.http.getRaw(status.toString(), {
-      metric: 'status-get-raw',
-    })
-  }
+  // public async getStatusWithHeaders(
+  //   status: number
+  // ): Promise<IOResponse<string>> {
+  //   return this.http.getRaw(status.toString(), {
+  //     metric: 'status-get-raw',
+  //   })
+  // }
 }
